@@ -1,0 +1,44 @@
+* {
+    /* background-color: rgb(136, 92, 180); */
+    background-color: rgb(100, 89, 77);    
+    color: white;
+}
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0 0 43px 17px rgba(153,153,153,1);
+}
+.input {    
+    grid-template-columns: 100px 1fr;
+}
+.input > div, .buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+}
+.input, .buttons {
+    display: grid;    
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+}
+#display {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;    
+}
+.buttons {    
+    grid-template-columns: repeat(4, 100px);
+    grid-auto-rows: 100px;    
+}
+.button, .btn {
+    border: 0.5px #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.button:hover, #clearButton:hover {
+    background-color: #323330;
+    transition: 0.5s ease-in-out;
+}
